@@ -56,8 +56,6 @@ app.post("/", (req, res) => {
       }
     });
 
-    // console.log(firstName,lastName,email);
-
 });
 
 app.post('/failure', function(req, res) {
