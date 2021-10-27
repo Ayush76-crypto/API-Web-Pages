@@ -6,6 +6,7 @@ function Weather() {
   const [search, setSearch] = useState("Lucknow");
 
   useEffect(() => {
+    
     const fetchAPI = async () => {
       const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=42b52f10f6026611871cdaa51836aca9`;
       const response = await fetch(url);
