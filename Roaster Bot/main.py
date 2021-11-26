@@ -1,3 +1,4 @@
+# This bot is made while I was practicing how to make discord bot.
 import discord
 import os
 import requests
