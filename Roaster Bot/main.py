@@ -36,7 +36,6 @@ def dalete_enc(index):
 async def on_ready():
     print("We have Logged in as {0.user}".format(client))
 
-
 # Message from bot itself
 @client.event
 async def on_message(message):
@@ -69,6 +68,5 @@ async def on_message(message):
             encouragements = db["encouragements"]
         await message.channel.send(encouragements)
 
-
 my_secret = os.environ['TOKEN']
-client.run(my_secret)
+client.run(my_secret
