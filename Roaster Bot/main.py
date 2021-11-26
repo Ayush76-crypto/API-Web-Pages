@@ -11,13 +11,11 @@ sad_words = ["sad", "depressed", "angry", "unhappy", "depress", "misery"]
 
 starter_msg = ["Cheer Up!", "Hang in there!", "You are a strong person!"]
 
-
 def get_quote():
     response = requests.get("https://zenquotes.io/api/random")
     json_data = json.loads(response.text)
     quote = json_data[0]['q'] + " -" + json_data[0]['a']
     return (quote)
-
 
 def update_enc(enc_msg):
     if "encouragements" in db.keys():
@@ -26,7 +24,6 @@ def update_enc(enc_msg):
         db['encouragements'] = encouragements
     else:
         db['encouragements'] = [enc_msg]
-
 
 def dalete_enc(index):
     encouragements = db['encouragements']
